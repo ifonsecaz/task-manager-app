@@ -109,7 +109,7 @@ public class AdminController {
 
     @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     @GetMapping("/task-count")
-    public ResponseEntity<?> userTaskList(@PathVariable long id) {
+    public ResponseEntity<?> userTaskCount() {
         RestTemplate restTemplate = new RestTemplate();
         
 
